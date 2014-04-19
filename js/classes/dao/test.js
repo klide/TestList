@@ -8,7 +8,7 @@ Test.Dao = function () {
      */
     this.getAllTests = function () {
         return $.ajax({
-            url: 'getData.php'
+            url: './data/data.json'
         });
     }
 }
