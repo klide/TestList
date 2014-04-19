@@ -9,11 +9,12 @@ Test.Domain = function () {
      */
     this.getAllTests = function () {
         return Test.Dao.getAllTests().then(function (allTests) {
-            var tests = [];
+            var tests = [],
+                allTestData = typeof allTests === 'object' ? allTests : JSON.parse(allTests);
 
             // Do some data massaging here...
             // @Example Just adding a Status next to the Name
-            $.each(JSON.parse(allTests), function (i, test) {
+            $.each(allTestData, function (i, test) {
                 switch (test.status) {
                     case 'Complete':
                         test.testName = test.testName + ' (Done)';
