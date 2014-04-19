@@ -4,7 +4,7 @@
 Test.Dao = function () {
 
     /**
-     * Simply Return ALL tests from Server Request
+     * Simply Return ALL tests from JSON file
      */
     this.getAllTests = function () {
         return $.ajax({
