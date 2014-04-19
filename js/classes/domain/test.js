@@ -8,7 +8,7 @@ Test.Domain = function () {
      * @return {array} Tests
      */
     this.getAllTests = function () {
-        return $.when(Test.Dao.getAllTests()).then(function (allTests) {
+        return Test.Dao.getAllTests().then(function (allTests) {
             var tests = [];
 
             // Do some data massaging here...
