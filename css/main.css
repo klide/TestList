@@ -20,6 +20,9 @@ li {
 li:last-child {
     border-bottom: 0px;
 }
+.relaxed {
+    margin:30px auto;
+}
 .box {
     margin: 20px 0px;
     padding: 0px 18px;
@@ -41,7 +44,7 @@ li:last-child {
 /** Custom Stuff **/
 #testViewer {
     width: 740px;
-    margin: 80px auto;
+    margin: 40px auto;
 }
 .testList li {
     font-size: 1.2em;
